@@ -1,26 +1,18 @@
-// suma de dos numeros
-
-//////////////////////////////////////////////////////////////////////////////
-
-/*
-Dado un arreglo de 4 posiciones crear un programa en java
-que permita tomar los dos valores del medio eliminando los extremos.
-Mostrar por pantalla el resultado
-
-{1,2,3,4} --> {2,3}
-
- */
+// #1 suma de dos numeros
+import java.util.Scanner;
 
 public class iniciado_JAVA_JEDI {
-    public static void main(String[] args){
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        int[] enteros = {1,2,3,4};
+        System.out.print("Ingresa un número: ");
+        int numero = scanner.nextInt();
 
-        for(int i=enteros.length-2; i>0; i--){
-            System.out.println("indice "+i+ " valor "+enteros[i]);
-        }
+        System.out.print("Ingresa otro número: ");
+        int numero2 = scanner.nextInt();
+
+        System.out.println(numero + numero2);
+
+        scanner.close();
     }
-
-} 
-
-/////////////////////////////////////////////////////////////////////////////
+}
